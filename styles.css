@@ -1,0 +1,250 @@
+html,
+body{
+    /* background; */
+    background-color: #10084b; /* fallback for no background*/
+    background-image: url('assets/6.png');
+    /* 100vw 100vh - disabling bg movements*/
+    background-size: 100vw 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+    padding:0;
+    overflow-x:hidden;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #10084b;
+}
+
+.form-logo{
+    width: 600px;
+    height: 600px;
+    margin: 15px;
+}
+
+
+.form-container{
+    width: 100%;
+    margin:auto;
+}
+
+.survey-container{
+    width: 50%;
+    margin:auto;
+    background:white;
+    opacity: 0.9;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 30px 0px #dbdbdb;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    /*Crucial for aligning items*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 5px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px;
+}
+
+p {
+    font-size: 0.8rem;
+    margin: 10px;
+    
+
+}
+
+
+.labels{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom:5px;
+    text-align: left;
+    width:100%;  
+}
+
+.answer-block{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+    width: 100%;
+    gap: 10px;
+}
+
+.answer-block input{
+    width: 100%;
+    padding:8px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+
+/*Styling Type: dropdown through "select"*/
+.answer-block select{
+    width: 100%;
+    padding:8px;
+    margin: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    cursor: pointer;
+}
+
+/*Styling Type: radio through calling "likert-scale" label*/
+.likert-scale{
+    list-style-type: none; /*removes bullet points*/
+    padding:0;
+    margin:0;
+}
+
+.likert-scale li {
+    display: flex;
+    /*aligns the radio button*/
+    justify-content: space-between; 
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px; /*spacing between radio button and label*/
+}
+
+/*Styling/Aligning the Radio Buttons*/
+.likert-scale input[type="radio"] {
+    margin-right: 0;
+    accent-color: #10084b;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+
+}
+
+/* Hover effect for the radio button */
+.likert-scale input[type="radio"]:hover {
+    accent-color: #0056b3; /* Darker blue on hover */
+}
+
+/*Label styling*/
+.likert-scale label {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+
+/*Remove Bullet points*/
+.checkbox{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+}
+
+/*aligns items in each list*/
+.checkbox li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    gap: 10px;
+    color: #333;
+}
+
+/*style the checkboxes*/
+.checkbox input[type="checkbox"]{
+    margin:0;
+    accent-color:#10084b;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Hover effect for the chechbox */
+.checkbox input[type="checkbox"]:hover {
+    accent-color: #0056b3; /* Darker blue on hover */
+}
+
+
+/*styling textbox*/
+.answer-block textarea{
+    width:100%;
+    max-width: 600px;
+    height: 120px;
+    padding: 10px; /* padding inside*/
+    font-size:1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow:0 2px 5px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+/*add placeholder*/
+.answer-block textarea::placeholder{
+    color:#aaa;
+    font-style: italic;
+
+}
+
+/*border glow*/
+
+.answer-block textarea:focus{
+    outline: none; /*remove default outline*/
+    border: 1px solid #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/*Submit button*/
+.submit-button{
+    background-color: #10084b;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 150px;
+    margin:10px auto;
+    display: block;
+}
+
+.submit-button:hover{
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /*slight life effect*/
+}
+
+
+/* bg movements are disabled 
+so we added this @media options for windows resizing*/
+
+/*MININUM RATIO*/
+@media (min-aspect-ratio: 16/9) {
+    body {
+        background-size: cover;
+    }
+}
+
+/*MAX RATIO*/
+@media (max-aspect-ratio: 16/9) {
+    body {
+        background-size: cover;
+    }
+}

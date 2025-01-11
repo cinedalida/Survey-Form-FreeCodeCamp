@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TintaTans Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- INSERT IMAGE -->
+    <div class="form-container">
+      <div class="form-header">
+        <img src="assets/1.png" alt=" TintaTans Logo" class="form-logo" />
+      </div>
+    </div>
+
+    <!-- SURVEY COMTAINER -->
+    <div class="survey-container">
+      <h1 id="title">TintaTans 3D Business</h1>
+      <h2 id="subheading">Interest Check Survey Form</h2>
+      <p id="description">
+        Please fill out this survey form to help us improve. Thank you!
+      </p>
+
+      <br />
+      <br />
+
+      <!-- SURVEY FORM: LABELS AND ANSWERS -->
+      <form id="survey-form" action="#" method="post">
+        <div class="labels">
+          <label id="name-label" for="name">Name: </label>
+        </div>
+
+        <div class="answer-block">
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label id="email-label" for="email">Email: </label>
+        </div>
+
+        <div class="answer-block">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label id="number-label" for="number">Age:</label>
+        </div>
+
+        <div class="answer-block">
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Enter your age"
+            min="1"
+            max="100"
+            required
+          />
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label for="info2">Select your current role:</label>
+        </div>
+
+        <div class="answer-block">
+          <select id="dropdown" name="role">
+            <option value="student">Student</option>
+            <option value="employed">Employed</option>
+            <option value="entrpreneur">Entrepreneur</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <br />
+
+        <!--Sample Likert Scale (RADIO)-->
+
+        <div class="labels">
+          <label id="gender-label" for="info3">Gender:</label>
+        </div>
+
+        <div class="answer-block">
+          <ul class="likert-scale">
+            <li>
+              <label>Female</label>
+              <input type="radio" name="gender" value="female" />
+            </li>
+            <li>
+              <label>Male</label>
+              <input type="radio" name="gender" value="male" />
+            </li>
+            <li>
+              <label>Queer</label>
+              <input type="radio" name="gender" value="queer" />
+            </li>
+            <li>
+              <label>Rather not say</label>
+              <input type="radio" name="gender" value="rather-not-say" />
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label for="question1">Are you familiar with 3D Printing?</label>
+        </div>
+
+        <div class="answer-block">
+          <ul class="likert-scale">
+            <li>
+              <label>Yes</label>
+              <input type="radio" name="response" value="1" />
+            </li>
+            <li>
+              <label>Not really </label>
+              <input type="radio" name="response" value="2" />
+            </li>
+            <li>
+              <label>No</label>
+              <input type="radio" name="response" value="3" />
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label for="question2">Would you buy a 3D printed product?</label>
+        </div>
+
+        <div class="answer-block">
+          <ul class="likert-scale">
+            <li>
+              <label>Yes</label>
+              <input type="radio" name="response" value="1" />
+            </li>
+            <li>
+              <label>Not really</label>
+              <input type="radio" name="response" value="2" />
+            </li>
+            <li>
+              <label>No</label>
+              <input type="radio" name="response" value="3" />
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <!--CHECKBOXES-->
+
+        <div class="labels">
+          <label for="question3"
+            >If yes, what type of 3D-printed products are you interested
+            in?</label
+          >
+        </div>
+
+        <div class="answer-block">
+          <ul class="checkbox">
+            <li>
+              Prototypes<input
+                type="checkbox"
+                name="product"
+                value="prototypes"
+              />
+            </li>
+            <li>
+              Action Figures<input
+                type="checkbox"
+                name="product"
+                value="action-figures"
+              />
+            </li>
+            <li>
+              Keychains<input
+                type="checkbox"
+                name="product"
+                value="keychains"
+              />
+            </li>
+            <li>
+              Accessories<input
+                type="checkbox"
+                name="product"
+                value="accessories"
+              />
+            </li>
+            <li>
+              Art Pieces<input
+                type="checkbox"
+                name="product"
+                value="art-pieces"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div class="labels">
+          <label for="suggestions"
+            >Any suggestions for TintaTans products?</label
+          >
+        </div>
+
+        <div class="answer-block">
+          <textarea
+            id="suggestions"
+            name="suggestions"
+            rows="5"
+            cols="30"
+            placeholder="Add suggestions here..."
+          ></textarea>
+        </div>
+
+        <br />
+
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
