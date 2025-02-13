@@ -21,3 +21,6 @@ Instructions:
 15. Inside the form element, you are presented with a textarea for additional comments
 16. Inside the form element, you are presented with a button with id of submit to submit all the inputs
 
+PHOTOS:
+![image](https://github.com/user-attachments/assets/c92df223-c235-45bd-a019-3b3f0f123f1c)
+![image](https://github.com/user-attachments/assets/18ffec1f-a94e-4b6b-a0d8-fc9998bc06e1)
