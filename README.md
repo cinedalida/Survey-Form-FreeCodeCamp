@@ -1,9 +1,8 @@
 [Responsive Website: FreeCodeCamp] 
-Project 1: Survey Form
 
-Sample Survey Form for "TintaTans" (a made-up 3D Printing Business)
+Basic Survey Form for "TintaTans" (a 3D Printing Business)
 
-Instructions:
+## Instructions:
 1. You should have a page title in an h1 element with an id of title
 2. You should have a short explanation in a p element with an id of description
 3. You should have a form element with an id of survey-form
@@ -21,6 +20,6 @@ Instructions:
 15. Inside the form element, you are presented with a textarea for additional comments
 16. Inside the form element, you are presented with a button with id of submit to submit all the inputs
 
-PHOTOS:
+## Image:
 ![image](https://github.com/user-attachments/assets/c92df223-c235-45bd-a019-3b3f0f123f1c)
 ![image](https://github.com/user-attachments/assets/18ffec1f-a94e-4b6b-a0d8-fc9998bc06e1)
